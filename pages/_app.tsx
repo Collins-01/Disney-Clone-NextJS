@@ -19,3 +19,4 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   )
 }
+// npx create-next-app  --typescript --example with-styled-components my-app-name
