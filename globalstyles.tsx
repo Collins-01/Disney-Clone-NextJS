@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -10,6 +10,13 @@ const GlobalStyle = createGlobalStyle`
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
+  h1, h2, h3, h4 {
+    color: ${({ theme }) => theme.white};
+    margin-bottom: 0;
+  }
+  p {
+    color: ${({ theme }) => theme.silver};
+  }
   a {
     color: inherit;
     text-decoration: none;
@@ -18,6 +25,6 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
